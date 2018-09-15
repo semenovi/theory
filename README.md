@@ -9,6 +9,7 @@ Suppose, we want to count how much integer 7 contents in interval from 0 to 10^4
   ...
 ```
 Then we compile and run the program. After she has finished work we can see on the screen something as this:
+
 ![1) 0.1...](https://github.com/semenovi/theory/blob/master/screenshot.png "Screenshot")
 
 ## Features
