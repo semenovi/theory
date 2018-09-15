@@ -6,11 +6,10 @@ int main()
 	Bigint *floor = new Bigint(0);
 	Bigint *ceil = new Bigint(10);
 	int counter = 0, tens = 1;
-	const int DIGIT = 7, FLOOR_TENS = 5;
+	const int DIGIT = 7, FLOOR_TENS = 10;
 	const bool PRINT_INTEGERS = false;
 	while (tens <= FLOOR_TENS)
 	{
-		counter = 0;
 		if (tens < 2)
 		{
 			*floor = 1;
@@ -30,6 +29,7 @@ int main()
 					counter++;
 					if (PRINT_INTEGERS)
 						std::cout << *floor << " ";
+					break;
 				}
 			}
 			*floor += 1;
