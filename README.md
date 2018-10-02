@@ -1,16 +1,23 @@
 # Strange theory
-Program checks how much digits contents in all of integers in interval from 0 to `FLOOR_TENS * 10` using [BigInt.h](https://github.com/kasparsklavins/bigint).
+Program checks how much digits contents in all of integers in interval from 0 to `FLOOR_TENS * 10` using [BigInt.h](https://github.com/kasparsklavins/bigint) by [Kaspars](https://github.com/kasparsklavins).
+
+Counting takes very long time on integers more than 10^6 because program don't use any optimizations.
 
 ## Example
-Suppose, we want to count how much integer 7 contents in interval from 0 to 10^4. So, we change content of the `main.cpp` as follows:
+Suppose, we want to count how much integers in interval from 0 to 10^4 content digit 7. So, we change content of the `main.cpp` as follows:
 ```c++
   ...
   const int DIGIT = 7, FLOOR_TENS = 4;
   ...
 ```
-Then we compile and run the program. After she has finished work we can see on the screen something as this:
-
-![1) 0.1...](https://github.com/semenovi/theory/blob/master/screenshot.png "Screenshot")
+Then we compile and run the program. After she has finished work we can see result:
+```
+1) 0.1
+2) 0.19
+3) 0.271
+4) 0.3439
+```
+where we can see number of integers that content digit 7 in intervals (0, 10), (10, 100) i.e.
 
 ## Features
 All of constants that you can change located in `main.cpp`.
