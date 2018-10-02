@@ -1,9 +1,9 @@
 # Strange theory
-Program checks how much digits contents in all of integers in interval from 0 to `FLOOR_TENS * 10` using [BigInt.h](https://github.com/kasparsklavins/bigint) by [Kaspars](https://github.com/kasparsklavins).
+The program checks how much digits are contained in all of integers between 0 to `FLOOR_TENS * 10` using [BigInt.h](https://github.com/kasparsklavins/bigint) by [Kaspars](https://github.com/kasparsklavins).
 
-Counting takes very long time on integers more than 10^6 because program don't use any optimizations.
+Counting takes very a long time on integers greater 10^6, since program doesn't use optimization.
 
-TODO: add optimization :), add module to run on multi-core cpu (or multi-thread mode, i don't know what is better), add module to run on CUDA-compatible gpu.
+TODO: add optimization :), add a module to run on a multi-core cpu (or multi-thread mode, i don't know which is better), add a module to run on CUDA-compatible gpu.
 
 ## Example
 Suppose, we want to count how much integers in interval from 0 to 10^4 content digit 7. So, we change content of the `main.cpp` as follows:
