@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 2.6)
+project(bigint)
+set(SOURCES bigint.cpp)
+set(HEADERS bigint.h)
+add_library(bigint ${SOURCES} ${HEADERS})
+target_include_directories(bigint PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
