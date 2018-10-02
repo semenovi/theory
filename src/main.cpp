@@ -1,4 +1,4 @@
-#include "../include/bigint.h"
+#include "bigint.h"
 #include "math.h"
 using namespace Dodecahedron;
 int main()
@@ -6,7 +6,7 @@ int main()
 	Bigint *floor = new Bigint(0);
 	Bigint *ceil = new Bigint(10);
 	int counter = 0, tens = 1;
-	const int DIGIT = 7, FLOOR_TENS = 10;
+	const int DIGIT = 7, FLOOR_TENS = 4;
 	const bool PRINT_INTEGERS = false;
 	while (tens <= FLOOR_TENS)
 	{
